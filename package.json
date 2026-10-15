@@ -1,0 +1,38 @@
+{
+  "name": "encore-tickets-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "dotenv -e .env.test -- vitest run",
+    "dev:test": "dotenv -e .env.test -- next dev -p 3001",
+    "test:watch": "dotenv -e .env.test -- vitest"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "next": "14.2.23",
+    "react": "^18",
+    "react-dom": "^18",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "dotenv-cli": "^11.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.23",
+    "prisma": "^6.19.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vite": "^8.3.4",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^5.0.4"
+  }
+}
