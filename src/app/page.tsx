@@ -2,7 +2,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-// @ts-expect-error CSS imports are handled by Next.js.
 import "./page.css";
 
 type Tier = {
