@@ -38,7 +38,7 @@ export interface CreateEventRequest {
   venue: string
 }
 
-export interface UpdateEventRequest extends Partial<CreateEventRequest> {}
+export type UpdateEventRequest = Partial<CreateEventRequest>;
 
 // Hold-related types
 export interface Hold {
@@ -92,7 +92,7 @@ export interface StripeWebhookEvent {
   object: string
   type: string
   data: {
-    object: any
+    object: unknown
   }
   // ... other Stripe webhook properties
 }
